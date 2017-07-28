@@ -4,11 +4,11 @@ import tensorflow as tf
 
 #
 # tf.transpose
-# 维度交换，eg: 2,4, 4 维变成 4, 2, 4 维
+# 维度交换，eg: 2,3, 4 维变成 3, 2, 4 维
 #
 
 dim1_size = 2
-dim2_size = 4
+dim2_size = 3
 dim3_size = 4
 
 dim1 = 0
