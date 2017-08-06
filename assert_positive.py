@@ -14,7 +14,7 @@ if __name__ == "__main__":
     value_check    = tf.convert_to_tensor(value_check, dtype=tf.int32)
 
     with tf.control_dependencies([tf.assert_positive(value_negative, message="This is Assert Message:============================================")]):
-        value_check  += 2
+        value_check = tf.identity(value_check)
 
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
