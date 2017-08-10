@@ -12,7 +12,8 @@ if __name__ == "__main__":
         print(array.shape)
         print(array)
         print("=====================================")
-        print("To shape: " + "[-1, 6]")
         print(sess.run(aR))
+        print("To shape: ")
+        print(sess.run(tf.shape(aR)))
         print("=====================================")
 
